@@ -1,0 +1,14 @@
+package examples.inhertnce;
+
+public class InhrytExample 
+{
+	long sum(int a,long b)
+	{
+		return a+b;
+	}
+	long sum(long a,int b)
+	{
+		return a+b;
+	}
+
+}

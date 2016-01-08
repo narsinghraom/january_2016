@@ -1,0 +1,102 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+   
+    <%@ page import="bean.CarOwnerBean" %>
+    <%@ page import="dao.DBConnection" %>
+    <%@ page import="java.util.*" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script>
+var x = 0;
+var y = 0;
+var z = 0;
+function calc(obj) {
+    var e = obj.id.toString();
+    if (e == 'cost') {
+        x = Number(obj.value);
+        y = Number(document.getElementById('quantity').value);
+    } else {
+        x = Number(document.getElementById('cost').value);
+        y = Number(obj.value);
+    }
+    z = x * y;
+    document.getElementById('total').value = z;
+    document.getElementById('update').innerHTML = z;
+}
+
+</script>
+<script type="text/javascript">
+var carowner=document.getElementById("carowner").value;
+</script>
+</head>
+<body>
+<form action="PrintServlet" method="post">
+<table>
+<tr>
+<td>
+Enter<input type="text" name="enter" placeholder="CarRegdNo/OwnerId"  id="carowner" >
+</td>
+</tr>
+<%-- <%
+String ownerID=request.getParameter("carowner");
+CarOwnerBean carownerbean=new CarOwnerBean();
+carownerbean.setOwnerID(ownerID);
+DBConnection db=new DBConnection();
+ArrayList<CarOwnerBean> arry=null;
+//arry=db.getPrintMethod(ownerID);
+Iterator itr=arry.iterator();
+while(itr.hasNext())
+		   {
+	carownerbean=(CarOwnerBean)itr.next();
+	
+		   }
+%> --%>
+
+<tr><td>Name<input type="text" name="name" disabled="disabled" value=<%=carownerbean.getOwnerID()%> >
+ <tr><td>CarRegdNo<input type="text" name="carregno" disabled="disabled" 
+ > 
+<tr><td>MobileNo<input type="text" name="moblieno" disabled="disabled" value=<%=carownerbean.getMobileNumber() %> >
+<tr><td>CarKms<input type="text" name="carkms" disabled="disabled"  >
+</table>
+
+ <fieldset> 
+<legend>Billing:</legend>
+<table>
+<tr>
+<td></td>
+<td  style="width:200px;"><b>Items</b></td>
+<td  style="width:200px;"><b>Qty</b></td>
+<td  style="width:200px;"><b>Rate</b></td>
+<td  style="width:200px;"><b>Amount</b></td>
+</tr>
+<tr>
+<td>1.</td>
+<td><input type="text" style="border: 0px"></td>
+ <td><input type="text" id="cost" onkeyup="calc(this)"></td>
+ <td><input type="text" id="quantity"  onkeyup="calc(this)"></td>
+ <td><input type="text" id="total"  Value="Amount" ></td>
+</tr><td></td>
+</table>
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

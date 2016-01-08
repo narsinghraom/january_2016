@@ -1,0 +1,22 @@
+package examples;
+import java.util.*;
+
+import dao.DBConnection;
+import bean.*;
+public class ReturnTwo 
+{
+	public HashMap<ArrayList<EmployeeBean>, ArrayList<EmployeeBean>> function()
+	{
+		HashMap<ArrayList<EmployeeBean>, ArrayList<EmployeeBean>> mapobj=new HashMap<ArrayList<EmployeeBean>, ArrayList<EmployeeBean>>();
+		
+		ArrayList<EmployeeBean> emparray=new ArrayList<EmployeeBean>();
+		ArrayList<EmployeeBean> emp1array=new ArrayList<EmployeeBean>();
+		DBConnection connect =new DBConnection();
+		emparray=connect.allDetails();
+		AdminBean bean=new AdminBean();
+		bean.setAdminId("admin1");
+		adminarray=connect.getUserName(bean);
+		return mapobj;
+		
+	}
+}

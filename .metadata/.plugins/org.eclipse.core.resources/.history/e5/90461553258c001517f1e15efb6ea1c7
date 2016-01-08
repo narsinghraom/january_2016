@@ -1,0 +1,137 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<html>
+<head>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/js/jquery-1.11.1.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insurance4u</title>
+<script type="text/javascript">
+function isNumber(evt) {
+	$("#lblId").html("");
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    
+    return true;
+}
+function validate() {
+	var txtInput= document.getElementById("zipId").value;
+	if(txtInput== null || txtInput=="" || txtInput == "Enter ZIP Code") {
+		$("#lblId").html("Please Enter ZIP Code");
+		return false;
+	}
+	else if(txtInput.length<5) {
+		$("#lblId").html("Please Enter Valid ZIP Code");
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+</script>
+</head>
+<body>
+
+	<table width="100%" border="0" align="center">
+		<tr>
+			<td width="40%" align="center"><img alt="globe"
+				src="${pageContext.request.contextPath}/images/globe.jpg"></td>
+			<td width="60%">
+				<h1 style="color: red" align="left">Insurance4u</h1>
+			</td>
+		</tr>
+		<tr align="center">
+			<td colspan="2"><img
+				src="${pageContext.request.contextPath}/images/slide-commercial-insurance.jpg"
+				id="slide" width="800" height="400" /></td>
+		</tr>
+		<tr>
+			<td width="100%" colspan="2">
+				<table cellspacing="0" border="0" width="100%">
+					<tr>
+						<td>
+							<table cellspacing="0" border="0" align="center" width="50%">
+								<tr>
+									<td><form:form id="homeFormId" method="POST"
+											modelAttribute="insuranceBean"
+											action="${pageContext.request.contextPath}//controllerAction">
+											<fieldset>
+												<legend style="color: blue">Get A Price Quote</legend>
+												<table>
+													<tr>
+														<td width="10px"></td>
+														<td colspan="2" style="color: blue; font-weight: bold"><label>More
+																than one Insurance you can get a Quote</label></td>
+													</tr>
+													<tr height="10px"></tr>
+													<tr>
+														<td width="10px"></td>
+														<td><select><option value="Auto">Auto</option></select></td>
+														<td><form:input type="text" value="Enter ZIP Code"
+																path="zip" name="zipValue" id="zipId"
+																onclick="this.value='';"
+																onkeypress="return isNumber(event)" maxlength="5"></form:input></td>
+													</tr>
+													<tr height="10px"></tr>
+													<tr>
+														<td width="10px"></td>
+														<td><button type="submit"
+																onclick="return validate();">Get A Quote</button></td>
+														<td><label id="lblId" style="color: red"></label></td>
+													</tr>
+												</table>
+											</fieldset>
+										</form:form></td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table cellspacing="0" border="1" bordercolor="blue" align="left"
+								width="50%">
+								<tr>
+									<td width="100">
+										<table>
+											<tr align="center">
+												<td><img alt="profile" src="images/profile.jpg"></td>
+												<td>Your Profile</td>
+											</tr>
+											<tr>
+												<td colspan="2" width=""><select><option
+															value="Auto">Auto</option></select></td>
+											</tr>
+											<tr>
+												<td colspan="2"><input type="text" value="User ID"
+													size="15"></td>
+											</tr>
+											<tr>
+												<td colspan="2"><input type="text" value="Password"
+													size="15"></td>
+											</tr>
+											<tr>
+												<td colspan="2"><input type="checkbox"
+													value="Remember me" id="rmId">Remember me <img
+													alt="qm" src="images/Question Mark.jpg" width="10"
+													height="10"></td>
+											</tr>
+											<tr>
+												<td colspan="2" align="center"><input type="button"
+													value="LOGIN" id="loginID"
+													style="background-color: #246BB2; color: white">
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

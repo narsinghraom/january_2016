@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<!-- <script type="text/javascript" src="js/Validate.js"></script> -->
+<!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.error').hide();
+	$(".submit").click(function(){
+		if($("#firstname").val()=="")
+			{
+			$(".error").show();
+			return false;
+			}
+			});
+	$("#firstname").keypress(function(){
+		$('.error').hide();
+	});
+
+});
+
+</script>
+
+
+</head>
+<body>
+<form action="" method="post" id="register-form" novalidate="novalidate">
+
+    <h2>User Registration</h2>
+
+    <div id="form-content">
+        <fieldset>
+
+            <div class="fieldgroup">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname"/>
+                <span class="error" >please enter firstname</span>
+            </div>
+
+            <div class="fieldgroup">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname"/>
+            </div>
+<input type="submit" value="submit" class="submit">
+            
+
+            
+
+        </fieldset>
+    </div>
+    
+
+        
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.*;
+import bean.*;
+public class DBConnection 
+{
+	PreparedStatement ps = null;
+	ResultSet rs = null;
+	Connection con = null;
+
+	public DBConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+
+			con = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/carzDB", "root", "root");
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+	public ArrayList<CountryBean> getCountry()
+	{
+		ArrayList<CountryBean> country_bean=new ArrayList<CountryBean>();
+		return country_bean;
+		
+	}
+
+
+}

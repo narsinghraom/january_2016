@@ -1,0 +1,83 @@
+2015-11-09 08:38:26,303 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-09 08:38:26,933 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-09 08:38:30,762 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-09 08:38:30,951 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-09 08:38:30,975 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-09 08:38:32,978 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-09 08:38:33,134 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-09 08:38:33,256 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-09 08:38:33,261 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-09 08:40:13,502 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-09 08:40:13,713 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-09 08:40:13,716 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-16 11:18:52,151 [Worker-29] ERROR o.e.m.c.embedder.MavenModelManager - Project read error
+org.sonatype.aether.collection.DependencyCollectionException: Failed to collect dependencies for [jstl:jstl:jar:1.2 (compile), commons-io:commons-io:jar:1.3.2 (compile), commons-fileupload:commons-fileupload:jar:1.3 (compile), log4j:log4j:jar:1.2.17 (compile), org.springframework:spring-webmvc:jar:4.1.4.RELEASE (compile), org.springframework:spring-orm:jar:4.1.4.RELEASE (compile), javax:javaee-web-api:jar:6.0 (provided), org.springframework:spring-web:jar:4.1.4.RELEASE (compile), commons-beanutils:commons-beanutils:jar:1.9.1 (compile), com.google.code.gson:gson:jar:2.3 (compile)]
+	at org.sonatype.aether.impl.internal.DefaultDependencyCollector.collectDependencies(DefaultDependencyCollector.java:258) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultRepositorySystem.collectDependencies(DefaultRepositorySystem.java:308) ~[aether-impl-1.13.1.jar:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager.readDependencyTree(MavenModelManager.java:223) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager$1.call(MavenModelManager.java:185) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager$1.call(MavenModelManager.java:1) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.execute(MavenProjectManager.java:121) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager.readDependencyTree(MavenModelManager.java:189) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readDependencyTree(MavenPomEditor.java:709) [org.eclipse.m2e.editor_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.m2e.editor.pom.DependencyTreePage$1.run(DependencyTreePage.java:220) [org.eclipse.m2e.editor_1.4.0.20130601-0317.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20130429-1813.jar:na]
+Caused by: org.sonatype.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for jstl:jstl:jar:1.2
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:296) ~[maven-aether-provider-3.0.4.jar:3.0.4]
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:186) ~[maven-aether-provider-3.0.4.jar:3.0.4]
+	at org.sonatype.aether.impl.internal.DefaultDependencyCollector.process(DefaultDependencyCollector.java:412) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultDependencyCollector.collectDependencies(DefaultDependencyCollector.java:240) ~[aether-impl-1.13.1.jar:na]
+	... 11 common frames omitted
+Caused by: org.sonatype.aether.resolution.ArtifactResolutionException: Failure to transfer jstl:jstl:pom:1.2 from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact jstl:jstl:pom:1.2 from/to central (http://repo.maven.apache.org/maven2): null to http://repo.maven.apache.org/maven2/jstl/jstl/1.2/jstl-1.2.pom
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:538) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:216) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:193) ~[aether-impl-1.13.1.jar:na]
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:281) ~[maven-aether-provider-3.0.4.jar:3.0.4]
+	... 14 common frames omitted
+Caused by: org.sonatype.aether.transfer.ArtifactTransferException: Failure to transfer jstl:jstl:pom:1.2 from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact jstl:jstl:pom:1.2 from/to central (http://repo.maven.apache.org/maven2): null to http://repo.maven.apache.org/maven2/jstl/jstl/1.2/jstl-1.2.pom
+	at org.sonatype.aether.impl.internal.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:237) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:216) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:427) ~[aether-impl-1.13.1.jar:na]
+	... 17 common frames omitted
+2015-11-16 11:18:52,191 [Worker-29] ERROR o.e.m.editor.pom.DependencyTreePage - Project read error
+org.eclipse.core.runtime.CoreException: Project read error
+	at org.eclipse.m2e.core.embedder.MavenModelManager.readDependencyTree(MavenModelManager.java:227) ~[na:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager$1.call(MavenModelManager.java:185) ~[na:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager$1.call(MavenModelManager.java:1) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.execute(MavenProjectManager.java:121) ~[na:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager.readDependencyTree(MavenModelManager.java:189) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readDependencyTree(MavenPomEditor.java:709) ~[na:na]
+	at org.eclipse.m2e.editor.pom.DependencyTreePage$1.run(DependencyTreePage.java:220) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20130429-1813.jar:na]
+Caused by: org.sonatype.aether.collection.DependencyCollectionException: Failed to collect dependencies for [jstl:jstl:jar:1.2 (compile), commons-io:commons-io:jar:1.3.2 (compile), commons-fileupload:commons-fileupload:jar:1.3 (compile), log4j:log4j:jar:1.2.17 (compile), org.springframework:spring-webmvc:jar:4.1.4.RELEASE (compile), org.springframework:spring-orm:jar:4.1.4.RELEASE (compile), javax:javaee-web-api:jar:6.0 (provided), org.springframework:spring-web:jar:4.1.4.RELEASE (compile), commons-beanutils:commons-beanutils:jar:1.9.1 (compile), com.google.code.gson:gson:jar:2.3 (compile)]
+	at org.sonatype.aether.impl.internal.DefaultDependencyCollector.collectDependencies(DefaultDependencyCollector.java:258) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultRepositorySystem.collectDependencies(DefaultRepositorySystem.java:308) ~[na:na]
+	at org.eclipse.m2e.core.embedder.MavenModelManager.readDependencyTree(MavenModelManager.java:223) ~[na:na]
+	... 9 common frames omitted
+Caused by: org.sonatype.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for jstl:jstl:jar:1.2
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:296) ~[na:na]
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:186) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultDependencyCollector.process(DefaultDependencyCollector.java:412) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultDependencyCollector.collectDependencies(DefaultDependencyCollector.java:240) ~[na:na]
+	... 11 common frames omitted
+Caused by: org.sonatype.aether.resolution.ArtifactResolutionException: Failure to transfer jstl:jstl:pom:1.2 from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact jstl:jstl:pom:1.2 from/to central (http://repo.maven.apache.org/maven2): null to http://repo.maven.apache.org/maven2/jstl/jstl/1.2/jstl-1.2.pom
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:538) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:216) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:193) ~[na:na]
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:281) ~[na:na]
+	... 14 common frames omitted
+Caused by: org.sonatype.aether.transfer.ArtifactTransferException: Failure to transfer jstl:jstl:pom:1.2 from http://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact jstl:jstl:pom:1.2 from/to central (http://repo.maven.apache.org/maven2): null to http://repo.maven.apache.org/maven2/jstl/jstl/1.2/jstl-1.2.pom
+	at org.sonatype.aether.impl.internal.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:237) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:216) ~[na:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:427) ~[na:na]
+	... 17 common frames omitted
+2015-11-23 15:54:41,722 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-23 15:54:42,162 [Worker-139] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-23 15:54:42,212 [Worker-139] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-23 15:54:43,002 [Worker-143] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Insurance:Insurance:0.0.1-SNAPSHOT @ D:\Examples\Insurance\pom.xml.
+2015-11-23 15:54:43,462 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+2015-11-23 15:54:43,462 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-resources-plugin:2.5: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.5

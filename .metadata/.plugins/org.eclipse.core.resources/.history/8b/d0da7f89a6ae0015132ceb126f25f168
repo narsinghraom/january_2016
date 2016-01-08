@@ -1,0 +1,52 @@
+package examples;
+import java.util.*;
+
+import dao.DBConnection;
+import bean.*;
+public class ReturnTwo 
+{
+	public static HashMap<ArrayList<EmployeeBean>, ArrayList<EmployeeBean>> function()
+	{
+		HashMap<ArrayList<EmployeeBean>, ArrayList<EmployeeBean>> mapobj=new HashMap<ArrayList<EmployeeBean>, ArrayList<EmployeeBean>>();
+		
+		ArrayList<EmployeeBean> emparray=new ArrayList<EmployeeBean>();
+		ArrayList<EmployeeBean> emp1array=new ArrayList<EmployeeBean>();
+		DBConnection connect =new DBConnection();
+		emparray=connect.allDetails();
+		EmployeeBean bean=new EmployeeBean();
+		bean.setEmployeeId("DS-1140");
+		emp1array=connect.allDetails(bean);
+		mapobj.put(emparray, emp1array);
+		
+		return mapobj;
+		
+	}
+	public static void main(String[] args) 
+	{
+		HashMap<ArrayList<EmployeeBean>, ArrayList<EmployeeBean>> mapobj=function();
+		ArrayList<EmployeeBean> emparay=null;
+		ArrayList<EmployeeBean> emp1array=null;
+		Set set=mapobj.entrySet();
+		Iterator itr=set.iterator();
+		while(itr.hasNext())
+		{
+			Map.Entry me=(Map.Entry)itr.next();
+			emparay=(ArrayList<EmployeeBean>) me.getKey();
+			emp1array=(ArrayList<EmployeeBean>) me.getValue();
+		}
+		Iterator iterator1=emparay.iterator();
+		Iterator iterator2=emp1array.iterator();
+		while(iterator1.hasNext())
+		{
+			EmployeeBean bean=(EmployeeBean)iterator1.next();
+			System.out.println(bean.getEmployeeId()+" "+bean.getDesignation());
+		}
+		while(iterator2.hasNext())
+		{
+			EmployeeBean bean=(EmployeeBean)iterator2.next();
+			System.out.println(bean.getEmployeeId()+ " " +bean.getEmailId()+ " "+bean);
+		}
+		
+		
+	}
+}
