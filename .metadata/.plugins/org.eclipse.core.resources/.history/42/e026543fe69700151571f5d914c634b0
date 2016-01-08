@@ -1,0 +1,31 @@
+package examples;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Cals 
+{
+	public static void main(String[] args) 
+	{
+		Scanner input=new Scanner(System.in);
+		
+		String value;
+		System.out.println("Enter");
+		value=input.next();
+		StringTokenizer bre=new StringTokenizer(value,"+");
+		int[] array=new int[bre.countTokens()];
+		for(int i=0;i<=bre.countTokens()-1;i++)
+		{
+		while (bre.hasMoreElements()) {
+			Object object = (Object) bre.nextElement();
+			String divva=(String)object;
+			array[i]=Integer.parseInt(divva);
+			
+		}
+		}
+		for(int j=0;j<=array.length-1;j++)
+			System.out.println(array[j]);
+		
+	}
+
+}

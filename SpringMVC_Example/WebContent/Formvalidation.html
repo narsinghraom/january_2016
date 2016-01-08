@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+$("#demo").validate({
+	rules:{
+		firstname:"required",
+		lastname:"required"
+	},
+	message:
+		{
+		firstname="plz enter the first name",
+		lastnam="plz enter the last naame",
+		},
+});
+</script>
+</head>
+<body>
+First Name<input type="text" name="fname" id="demo">
+Last Name<input type="text" name="lname"> 
+</body>
+</html>

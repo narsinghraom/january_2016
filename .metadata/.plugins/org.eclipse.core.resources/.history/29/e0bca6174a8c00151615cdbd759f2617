@@ -1,0 +1,18 @@
+package examples.inhertnce;
+
+public class InhrytExample 
+{
+	long sum(int a,long b)
+	{
+		return a+b;
+	}
+	long sum(long a,int b)
+	{
+		return a+b;
+	}
+	public static void main(String[] args) {
+		InhrytExample i=new InhrytExample();
+		long res=i.sum(10, 10);
+	}
+
+}

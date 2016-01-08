@@ -1,0 +1,11 @@
+package examples;
+import java.util.*;
+import bean.*;
+public class ReturnTwo 
+{
+	public HashMap<ArrayList<EmployeeBean>, ArrayList<AdminBean>> function()
+	{
+		HashMap<ArrayList<EmployeeBean>, ArrayList<AdminBean>> mapobj=new HashMap<ArrayList<EmployeeBean>, ArrayList<AdminBean>>();
+		
+	}
+}

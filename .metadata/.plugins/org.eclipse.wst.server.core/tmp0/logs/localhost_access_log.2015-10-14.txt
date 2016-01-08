@@ -1,0 +1,6 @@
+127.0.0.1 - - [14/Oct/2015:09:58:16 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [14/Oct/2015:09:58:18 +0530] "GET /CarService/ViewEmployee.jsp HTTP/1.1" 200 686
+0:0:0:0:0:0:0:1 - - [14/Oct/2015:09:58:18 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [14/Oct/2015:09:58:21 +0530] "POST /CarService/ViewEmployeeDetails.jsp HTTP/1.1" 500 4368
+0:0:0:0:0:0:0:1 - - [14/Oct/2015:09:58:25 +0530] "POST /CarService/ViewEmployeeDetails.jsp HTTP/1.1" 500 3395
+0:0:0:0:0:0:0:1 - - [14/Oct/2015:10:07:45 +0530] "POST /CarService/ViewEmployeeDetails.jsp HTTP/1.1" 500 4368

@@ -1,0 +1,13 @@
+127.0.0.1 - - [04/Nov/2015:17:30:33 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [04/Nov/2015:17:30:47 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:17:30:53 +0530] "GET /SpringMVC_Example/index.jsp HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:17:30:53 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:17:31:07 +0530] "GET /SpringMVC_Example/hello.html HTTP/1.1" 404 1007
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:17:44:07 +0530] "GET /SpringMVC_Example/index.jsp HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:17:44:10 +0530] "GET /SpringMVC_Example/hello.html HTTP/1.1" 404 1007
+127.0.0.1 - - [04/Nov/2015:18:00:08 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:18:00:10 +0530] "GET /SpringMVC_Example/ HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:18:00:19 +0530] "GET /SpringMVC_Example/hello.html HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:18:00:29 +0530] "GET /SpringMVC_Example/ HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:18:00:40 +0530] "GET /SpringMVC_Example/ HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [04/Nov/2015:18:00:57 +0530] "GET /SpringMVC_Example/hello.html HTTP/1.1" 404 949

@@ -1,0 +1,68 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ page import="java.util.*" %>
+    <%@ page import="dao.*" %>
+    <%@ page import="bean.*" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Update</title>
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+
+  <form action="UpdateEmployeeServlet" method="post">
+  <table>
+<% 
+ 
+     String employeeid=request.getParameter("employeeid").trim();
+
+     EmployeeBean employeebean=new EmployeeBean();
+     EmployeeBean employeebean1=null;
+     employeebean.setEmployeeId(employeeid);
+
+      ArrayList<EmployeeBean> arrayobj1 =new ArrayList<EmployeeBean>();
+      DBConnection dbc=new  DBConnection();
+      arrayobj1=dbc.allDetails(employeebean);
+      Iterator<EmployeeBean> itr=arrayobj1.iterator();
+      while(itr.hasNext())
+      {
+    	  //employeebean1=new EmployeeBean();
+    	    employeebean1=(EmployeeBean)itr.next(); 
+    %>
+    <tr>
+    <td>Employee Id</td>
+    <td><input type="text" name="employeeid" disabled="disabled" value=<%=employeebean1.getEmployeeId() %>></td>
+    </tr>
+<tr><td>Employee Name</td>
+<td><input type="text" name="employeename" value=<%=employeebean1.getEmployeeName()%>></td></tr>
+
+<tr><td>Designation</td>
+				<td><input type="text" name="designatione" value=<%=employeebean1.getDesignation()%>  ></td></tr>
+<tr><td>MobileNo</td>
+				<td><input type="text" name="mobileNo"  value=<%=employeebean1.getMobileNo()%>></td></tr>
+<tr> <td>EmailId</td>
+				<td><input type="text" name="emailid"  value=<%=employeebean1.getEmailId()%>></td></tr>
+<tr><td>Address</td>
+				<td><input type="text" name="address"  value=<%=employeebean1.getAddress()%>></td></tr>
+<tr><td>JoiningDate</td>
+				<td><input type="text" name="joiningDate"  value=<%=employeebean1.getJoiningDate()%>></td></tr> 
+<tr><td>PreviousExperience</td>
+				<td><input type="text" name="previousexperience" value=<%=employeebean1.getPreviousExperience()%>></td></tr> 
+				<tr>
+				<td><input type="submit" name="update" value="Update" ></td>
+   <td><input type="button" name="cancel" value="Cancel"></td></tr>
+				
+ 		  			 				
+</table>
+  
+  </form>
+  	<%  
+      } 
+  %>
+</body>
+</html>

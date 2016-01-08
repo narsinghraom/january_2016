@@ -1,0 +1,16 @@
+package examples;
+
+import java.util.Scanner;
+
+public class Cals 
+{
+	public static void main(String[] args) 
+	{
+		Scanner input=new Scanner(System.in);
+		String value;
+		System.out.println("Enter");
+		value=input.next();
+		
+	}
+
+}

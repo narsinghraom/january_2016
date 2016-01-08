@@ -1,0 +1,7 @@
+127.0.0.1 - - [18/Sep/2015:14:39:04 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [18/Sep/2015:14:39:06 +0530] "GET /CarService/ HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [18/Sep/2015:14:39:06 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [18/Sep/2015:14:39:18 +0530] "GET /CarService/admin.jsp HTTP/1.1" 404 991
+0:0:0:0:0:0:0:1 - - [18/Sep/2015:14:39:28 +0530] "GET /CarService/Admin.jsp HTTP/1.1" 200 741
+0:0:0:0:0:0:0:1 - - [18/Sep/2015:14:39:28 +0530] "GET /CarService/AdminValidation.js HTTP/1.1" 200 1091
+0:0:0:0:0:0:0:1 - - [18/Sep/2015:14:40:04 +0530] "POST /CarService/AdminRegServlet HTTP/1.1" 500 1502

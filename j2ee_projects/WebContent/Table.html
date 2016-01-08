@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<script>  
+var request;  
+function sendVanaja()  
+{  
+var v=document.vinform.num.value;  
+var url="indext1.jsp?val="+v;  
+  
+if(window.XMLHttpRequest){  
+request=new XMLHttpRequest();  
+}  
+else if(window.ActiveXObject){  
+request=new ActiveXObject("Microsoft.XMLHTTP");  
+}  
+  
+try  
+{  
+request.onreadystatechange=getDetails;  
+request.open("GET",url,true);  
+request.send();  
+}  
+catch(e)  
+{  
+alert("Unable to connect to server");  
+}  
+}  
+  
+function getDetails(){  
+if(request.readyState==4){  
+var val=request.responseText;  
+document.getElementById('amit').innerHTML=val;  
+}  
+}  
+  
+</script>  
+</head>  
+<body>  
+    
+  
+<form name="vinform">  
+<input type="text" name="num" onkeyup="sendVanaja()">  
+<input type="button" value="ShowTable"  onclick="sendVanaja()">  
+</form>  
+  
+<span id="amit"> </span>  
+  
+</body>  
+</html>  

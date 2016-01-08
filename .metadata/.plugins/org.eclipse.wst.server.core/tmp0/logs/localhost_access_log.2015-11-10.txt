@@ -1,0 +1,14 @@
+127.0.0.1 - - [10/Nov/2015:08:43:38 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:43:44 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4418
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:46:11 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4418
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:46:13 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4418
+127.0.0.1 - - [10/Nov/2015:08:51:24 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:51:27 +0530] "GET /strutsapplication/ HTTP/1.1" 404 987
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:51:47 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4117
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:59:19 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4416
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:59:19 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4416
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:59:19 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4416
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:59:19 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4416
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:08:59:58 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4413
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:09:01:34 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4416
+0:0:0:0:0:0:0:1 - - [10/Nov/2015:11:40:42 +0530] "GET /strutsapplication/LoginAuthentication.jsp HTTP/1.1" 500 4416

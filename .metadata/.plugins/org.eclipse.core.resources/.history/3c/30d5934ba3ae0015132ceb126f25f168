@@ -1,0 +1,10 @@
+package examples;
+import java.util.*;
+import bean.*;
+public class ReturnTwo 
+{
+	public ArrayList<ArrayList<EmployeeBean>, ArrayList<AdminBean>> function()
+	{
+		
+	}
+}

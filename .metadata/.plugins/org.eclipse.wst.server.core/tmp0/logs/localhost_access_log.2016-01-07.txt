@@ -1,0 +1,16 @@
+127.0.0.1 - - [07/Jan/2016:09:36:38 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:36:41 +0530] "GET /j2ee_projects/Search_Ajax.jsp HTTP/1.1" 200 1113
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:36:55 +0530] "GET /j2ee_projects/Search_Ajax.jsp HTTP/1.1" 200 1113
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:36:55 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:37:01 +0530] "GET /j2ee_projects/Search_Ajax.jsp?count=i HTTP/1.1" 200 1113
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:37:01 +0530] "GET /j2ee_projects/Search_Ajax.jsp?count=in HTTP/1.1" 200 1113
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:37:01 +0530] "GET /j2ee_projects/Search_Ajax.jsp?count=indi HTTP/1.1" 200 1113
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:37:01 +0530] "GET /j2ee_projects/Search_Ajax.jsp?count=ind HTTP/1.1" 200 1113
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:37:02 +0530] "GET /j2ee_projects/Search_Ajax.jsp?count=india HTTP/1.1" 200 1174
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:37:02 +0530] "GET /j2ee_projects/Search_Ajax.jsp?count=india HTTP/1.1" 200 1174
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:39:59 +0530] "GET /j2ee_projects/SearchPage.jsp HTTP/1.1" 200 402
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:40:11 +0530] "GET /j2ee_projects/SearchPage.jsp HTTP/1.1" 200 402
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:40:11 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:09:40:17 +0530] "POST /j2ee_projects/SearchServlet HTTP/1.1" 200 463
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:15:00:30 +0530] "POST /j2ee_projects/SearchServlet HTTP/1.1" 200 402
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:15:00:37 +0530] "POST /j2ee_projects/SearchServlet HTTP/1.1" 200 463

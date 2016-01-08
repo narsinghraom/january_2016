@@ -1,0 +1,9 @@
+127.0.0.1 - - [28/Sep/2015:09:53:59 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:09:54:02 +0530] "GET /CarService/ HTTP/1.1" 200 829
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:09:54:02 +0530] "GET /CarService/FormValidation.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:09:54:02 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:10:01:42 +0530] "POST /CarService/EmployeeLoginServlet HTTP/1.1" 200 869
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:10:02:03 +0530] "POST /CarService/EmployeeLoginServlet HTTP/1.1" 200 1783
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:10:02:37 +0530] "GET /CarService/EmployeeLoginServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:10:02:46 +0530] "POST /CarService/EmployeeLoginServlet HTTP/1.1" 200 1783
+0:0:0:0:0:0:0:1 - - [28/Sep/2015:10:02:49 +0530] "GET /CarService/CarBilling.jsp HTTP/1.1" 200 255
